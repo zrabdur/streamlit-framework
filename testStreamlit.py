@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 from dotenv import load_dotenv
 # To make things easier later, we're also importing numpy and pandas for
@@ -14,6 +15,8 @@ import simplejson as sj
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from io import StringIO
+
+load_dotenv()
 
 add_textinput = st.sidebar.text_input(
     'Enter company name'
@@ -58,6 +61,7 @@ elif month1 == 'December':
 #
 ###########key = 'DVIO8GSIISAAPZE1'
 
+key = os.getenv('key')
 # ticker = 'AAPL'
 url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={}&apikey={}'.format(ticker, key)
 
