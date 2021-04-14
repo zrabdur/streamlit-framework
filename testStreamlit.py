@@ -3,7 +3,7 @@ import streamlit as st
 from dotenv import load_dotenv
 # To make things easier later, we're also importing numpy and pandas for
 # working with sample data.
-import numpy as np
+#import numpy as np
 import pandas as pd
 import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for
@@ -11,9 +11,9 @@ import streamlit as st
 
 import requests
 import json
-import simplejson as sj
+
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from io import StringIO
 
 load_dotenv()
